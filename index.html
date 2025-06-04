@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Token Chart Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solana Token Chart Viewer</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="rpcUrl">RPC URL:</label>
+                <input type="text" id="rpcUrl" placeholder="https://clean-frosty-sunset.solana-mainnet.quiknode.pro/bd89be36d2411a1939eced1e8d6598c7a7bd1b13">
+            </div>
+            <div class="input-group">
+                <label for="tokenAddress">Token Address:</label>
+                <input type="text" id="tokenAddress" placeholder="Enter Solana token address">
+            </div>
+            <button onclick="updateChart()">Update Chart</button>
+        </div>
+
+        <div id="price-chart-widget-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
